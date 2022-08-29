@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-     <link rel="stylesheet" href="../../dist/assets/entry.0606604b.css">
+     <link rel="stylesheet" href="../../dist/assets/entry.86672efc.css">
 </head>
 
 <body>
@@ -14,24 +14,24 @@
     <div id="app"></div>
     <script type="module">
         import { createApp } from "vue/dist/vue.esm-bundler.js";
-        import SmartyUI, { JSXButton, MyButton } from "../../dist/smarty-ui.esm.js";
+        import SmartyUI, { JSXButton, SButton } from "../../dist/smarty-ui.esm.js";
 
         createApp({
             template: `
      
       <div style="margin-bottom:20px;">
-            <MyButton color="blue">主要按钮</MyButton>
-            <MyButton color="green">绿色按钮</MyButton>
-            <MyButton color="gray">灰色按钮</MyButton>
-            <MyButton color="yellow">黄色按钮</MyButton>
-            <MyButton color="red">红色按钮</MyButton>
+            <SButton color="blue">主要按钮</SButton>
+            <SButton color="green">绿色按钮</SButton>
+            <SButton color="gray">灰色按钮</SButton>
+            <SButton color="yellow">黄色按钮</SButton>
+            <SButton color="red">红色按钮</SButton>
         </div>
         <div style="margin-bottom:20px;">
-            <MyButton color="blue" round plain icon="search">搜索按钮</MyButton>
-            <MyButton color="green" round plain icon="edit">编辑按钮</MyButton>
-            <MyButton color="gray" round plain icon="check">成功按钮</MyButton>
-            <MyButton color="yellow" round plain icon="message">提示按钮</MyButton>
-            <MyButton color="red" round plain icon="delete">删除按钮</MyButton>
+            <SButton color="blue" round plain icon="search">搜索按钮</SButton>
+            <SButton color="green" round plain icon="edit">编辑按钮</SButton>
+            <SButton color="gray" round plain icon="check">成功按钮</SButton>
+            <SButton color="yellow" round plain icon="message">提示按钮</SButton>
+            <SButton color="red" round plain icon="delete">删除按钮</SButton>
         </div>
 
     `}).use(SmartyUI).mount('#app')
