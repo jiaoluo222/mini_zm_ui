@@ -67,26 +67,13 @@ const Button = defineComponent({
     }, null) : "", slots.default ? slots.default() : ""]);
   }
 });
-const SButton = {
+const index = {
   install(app) {
     app.component(Button.name, Button);
   }
 };
-const JSXButton = defineComponent({
-  name: "JSXButton",
-  render() {
-    return createVNode("button", null, [createTextVNode("JSX Button")]);
-  }
-});
-const entry = {
-  install(app) {
-    app.component(SButton.name, SButton);
-    app.component(JSXButton.name, JSXButton);
-  }
-};
 export {
-  JSXButton,
-  SButton,
-  entry as default
+  Button,
+  index as default
 };
-//# sourceMappingURL=smarty-ui.esm.js.map
+//# sourceMappingURL=index.mjs.map
